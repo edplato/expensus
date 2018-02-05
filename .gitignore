@@ -1,0 +1,15 @@
+.DS_Store
+tmp/*
+!tmp/.gitkeep
+build/
+pids
+.lock-wscript
+node_modules
+bower_components
+*.sublime-workspace
+*.vscode
+config/database.json
+config/environments/development.yml
+config/schema_structure.sql
+config/application.yml
+npm-debug.log

@@ -1,0 +1,28 @@
+{
+  "name": "expensus",
+  "version": "0.0.1",
+  "description": "Expenses for the modern family",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredmeek/expensus.git"
+  },
+  "author": "Jared Meek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaredmeek/expensus/issues"
+  },
+  "homepage": "https://github.com/jaredmeek/expensus#readme",
+  "dependencies": {
+    "pg": "^7.4.1",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.0",
+    "typescript": "^2.7.1"
+  }
+}
