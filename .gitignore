@@ -1,15 +1,27 @@
+# os files
 .DS_Store
+
+# temp files
 tmp/*
 !tmp/.gitkeep
+
+# build files
 build/
-pids
-.lock-wscript
+
+# third-party library files
 node_modules
 bower_components
+
+# workspace / editor files
 *.sublime-workspace
 *.vscode
+
+# config files
+.env
 config/database.json
 config/environments/development.yml
 config/schema_structure.sql
 config/application.yml
+
+# debug files
 npm-debug.log
