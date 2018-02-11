@@ -63,6 +63,7 @@
     "ts-jest": "^22.0.4",
     "ts-loader": "^3.5.0",
     "ts-node": "^4.1.0",
+    "ts-node-dev": "^1.0.0-pre.11",
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.7.0",
     "tslint-react": "^3.4.0",

@@ -13,13 +13,13 @@ App expects to be served from behind an nginx server, so will not handle https i
   }
 
   upstream expensus_api {
-    server 127.0.0.1:8130
+    server 127.0.0.1:8130;
   }
 
   server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name api.atreidesdev.dev
+    server_name expensus.atreidesdev.dev
 
     ssl on;
     ssl_certificate /usr/local/etc/nginx/ssl/atreidesdev-wildcard.pem;
