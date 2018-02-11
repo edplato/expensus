@@ -15,6 +15,10 @@ Move TS
 
 Config files for these are provided, be sure to install any necessary plugins for your editors
 
+## Imports
+
+Group by source. First group is third-party libraries. Second group is local modules. Third group is config or require-to-execute files.
+
 ## Git Workflow
 
 * Branch for feature work, typically don't commit directly to master
@@ -26,4 +30,4 @@ Config files for these are provided, be sure to install any necessary plugins fo
 > There's not CI setup yet, but let's not get lazy because of it. Don't PR broken
 > code.
 
-### Task tracking - none atm, may incorporate waffle.io in the future
+## Task tracking - none atm, may incorporate waffle.io in the future
