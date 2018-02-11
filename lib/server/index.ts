@@ -8,6 +8,7 @@ import path from 'path'
 
 const app = new Koa()
 const router = new Router()
+const port = process.env.SERVER_PORT || 3000
 
 app.use(logger())
 app.use(favicon(path.join(process.cwd(), 'public', 'favicon.ico')))
@@ -18,6 +19,6 @@ router.get('/*', async ctx => {
 
 app.use(router.routes())
 
-app.listen(process.env.SERVER_PORT || 3000)
+app.listen(port)
 
-console.log('Server running on port: ', process.env.SERVER_PORT || '3000')
+console.log('Server running on port: ', port)
