@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# the tsc / sed monstrosity is because...
+#
+# 1) tsc --watch tries to clear the buffer every time, so we strip the escape
+#    code for that
+# 2) the output of watch in general is annoying and noisy and doesn't work well
+#    when viewed next to other stuff, so we tidy it up a bit
+
+npx concurrently \
+  --names "node,tsc,webpack" \
+  --prefix-colors "green.bold,blue.bold,cyan.bold" \
+  "npx nodemon" \
+  "npx tsc --project tsconfig.server.json --noEmit --watch | gsed -Eu -e 's/\\x1Bc//g' -e '/Starting incremental/d' -e '/^$/d' -e '/ .+?error.+? /{x;p;x;}' -e '/ .+?error.+? /G' -e '/Compilation complete/{x;p;x;}'" \
+  "npx webpack --watch"
