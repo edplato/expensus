@@ -1,5 +1,7 @@
 ### Dev Environment Setup
 
+## Local Server
+
 App expects to be served from behind an nginx server, so will not handle https itself. If you have an existing nginx config, then adding the below should help. Set the ports to whatever you need and note the certs in use, adjust those to your own self-signed certs if necessary.
 
 ```
