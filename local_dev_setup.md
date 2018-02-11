@@ -40,4 +40,4 @@ App expects to be served from behind an nginx server, so will not handle https i
   }
 ```
 
-_Note: _ you may also want to add `expensus_api.atreidesdev.dev` to your hosts file
+_Note: _ you may also want to add `expensus.atreidesdev.dev` to your hosts file
