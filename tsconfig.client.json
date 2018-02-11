@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "lib": ["dom.iterable", "dom", "es5", "es6", "scripthost"],
+    "module": "es2015",
+    "target": "es5"
+  },
+  "exclude": ["node_modules", "@types", "tmp", "build", "lib/server"]
+}
