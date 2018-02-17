@@ -8,6 +8,9 @@ tmp/*
 # build files
 build/
 
+# public files
+public/
+
 # third-party library files
 node_modules
 bower_components
