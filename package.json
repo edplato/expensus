@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "ts-node-dev --no-notify lib/server",
-    "webpack:watch":
-      "webpack --config lib/client/config/webpack.config.ts --watch --colors",
+    "webpack:watch": "webpack --config lib/client/config/webpack.config.ts --watch --colors",
     "test": "jest",
     "test:watch": "jest --watch",
     "typecheck:server": "tsc --noEmit --project tsconfig.json",
@@ -17,8 +16,18 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
-    "setupFiles": ["./test/test-setup.ts", "jest-localstorage-mock"],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "setupFiles": [
+      "./test/test-setup.ts",
+      "jest-localstorage-mock"
+    ],
     "testURL": "https://sdk.loyaltylion.dev"
   },
   "importSort": {
@@ -100,6 +109,7 @@
     "prettier": "^1.10.2",
     "raf": "^3.4.0",
     "raw-loader": "^0.5.1",
+    "redux-devtools-extension": "^2.13.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
     "testdouble": "^3.5.0",
@@ -110,6 +120,7 @@
     "tslint": "^5.9.1",
     "tslint-config-prettier": "^1.7.0",
     "tslint-react": "^3.4.0",
+    "type-zoo": "^1.2.1",
     "typescript": "^2.7.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.11.0",
