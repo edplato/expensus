@@ -1,0 +1,2 @@
+client: yarn webpack:watch
+server: yarn server 
