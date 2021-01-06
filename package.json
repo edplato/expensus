@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/jaredmeek/expensus#readme",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "classnames": "^2.2.5",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
